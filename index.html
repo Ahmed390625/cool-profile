@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header class="header" id="ahmed2">
+    <span><span class="special">EL</span> Khan</span>
+    <ul id="ahmed">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fa-solid fa-xmark" onclick="closelist()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openlist()"></i>
+  </header>
+
+  <main>
+    <section class="section-home" id="home">
+      <p> I'm a Programmer</p>
+      <h1>Hi, I'm <span>Khan</span> <br>EL Mohamedy From India</h1>
+    </section>
+    <section class="section-about" id="about">
+      <div class="image-user">
+        <img src="images/user.png" alt="">
+      </div>
+      <div class="about-info">
+        <h1>About Me</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolorum minus incidunt vero, nesciunt dolor odit officia perspiciatis earum et quod, neque, </p>
+        <ul class="tabs">
+          <li class="active" data-cont=".one">Skills</li>
+          <li data-cont=".two">Experience</li>
+          <li data-cont=".three">Education</li>
+        </ul>
+        <div class="content">
+          <div class="one">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, dicta!</div>
+          <div class="two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, dicta!</div>
+          <div class="three">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, dicta!</div>
+        </div>
+      </div>
+      
+      
+    </section>
+    <section class="services" id="services">
+      <h2>Services</h2>
+      <div class="container">
+          <div>
+            <i class="fa-solid fa-pen" style="color: #ffffff;"></i>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Molestiae, praesentium.</p>
+          </div>
+        <div>
+          <i class="fa-solid fa-pen" style="color: #ffffff;"></i>
+          <h3>UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Molestiae, praesentium.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-pen" style="color: #ffffff;"></i>
+          <h3>Web App</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Molestiae, praesentium.</p>
+        </div>
+      </div>
+      
+      
+    </section>
+    <section class="my-work" id="portfolio">
+      <h2>My Works</h2>
+      <div class="container-img">
+        <div class="work">
+            <img src="images/work-1.png" alt="">
+            <div class="image-hover">
+              <h3>Social App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit dolores, sint alias recusandae suscipit impedit ut aliquam </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="">
+            <div class="image-hover">
+              <h3>Social App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit dolores, sint alias recusandae suscipit impedit ut aliquam </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="">
+            <div class="image-hover">
+              <h3>Social App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit dolores, sint alias recusandae suscipit impedit ut aliquam </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+        <a href="#" class="see-more">See More</a>
+      
+    </section>
+    <section class="contact-me" id="contact">
+      <div class="left-row">
+        <h2>Contact Me</h2>
+        <p><i class="fa-solid fa-paper-plane"></i>ahmed390625@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>01100239848</p>
+        <div class="icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" download class="see-more add">Download My CV</a>
+      </div>
+      <div class="right-row">
+        <form action="">
+          <input type="text" name="text" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button class="see-more add2">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>copyright &copy; Ahmed. Made with <i class="fa-solid fa-heart"></i> by Ahmed</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
